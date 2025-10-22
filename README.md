@@ -4,9 +4,9 @@
 
 ---
 
-# Pasos integrados:
+## Pasos integrados:
 
-## Usamos la plantilla de la aplicación de fotos y la vamos adaptando poco a poco con ayuda del repositorio proporcionado por el Ingeniero.
+## 1. Usamos la plantilla de la aplicación de fotos y la vamos adaptando poco a poco con ayuda del repositorio proporcionado por el Ingeniero.
 
 ---
 
@@ -15,7 +15,7 @@
 
 ---
 
-## Primero, modificamos los íconos que mostrarán las diferentes secciones de nuestro proyecto.
+## 2. Primero, modificamos los íconos que mostrarán las diferentes secciones de nuestro proyecto.
 
 ---
 
@@ -23,7 +23,7 @@
 
 ---
 
-## Luego comenzamos con el código. Para esto, debemos tener instalados @capacitor/filesystem y @capacitor/geolocation.
+## 3. Luego comenzamos con el código. Para esto, debemos tener instalados @capacitor/filesystem y @capacitor/geolocation.
 
 ---
 
@@ -31,7 +31,7 @@
 
 ---
 
-## Con esto listo, vamos a modificar nuestra página de inicio, que será la encargada de mostrar información relevante de nuestra aplicación.
+## 4. Con esto listo, vamos a modificar nuestra página de inicio, que será la encargada de mostrar información relevante de nuestra aplicación.
 
 ---
 
@@ -41,7 +41,7 @@
 
 ---
 
-## Ahora vamos a pasar a la seccion de Photo, Esta página permite tomar fotos, mostrar su previsualización, registrar ubicación automática y guardarla opcionalmente en un archivo TXT.
+## 5. Ahora vamos a pasar a la seccion de Photo, Esta página permite tomar fotos, mostrar su previsualización, registrar ubicación automática y guardarla opcionalmente en un archivo TXT.
 
 ---
 
@@ -50,7 +50,7 @@
 
 ---
 
-## Esta clase permite tomar fotos desde la cámara, obtener la ubicación automática del usuario y mostrar una previsualización. Luego, guarda la imagen junto con la información de ubicación y un enlace a Google Maps usando PhotoService. También limpia los campos y permite navegar a la galería tras guardar la foto.
+## 6. Esta clase permite tomar fotos desde la cámara, obtener la ubicación automática del usuario y mostrar una previsualización. Luego, guarda la imagen junto con la información de ubicación y un enlace a Google Maps usando PhotoService. También limpia los campos y permite navegar a la galería tras guardar la foto.
 
 ---
 
@@ -58,7 +58,7 @@
 
 ---
 
-## Esta página muestra la galería de fotos guardadas, incluyendo imagen, descripción, fecha y ubicación. Permite ver la ubicación en Google Maps y eliminar fotos de forma interactiva.
+## 7. Esta página muestra la galería de fotos guardadas, incluyendo imagen, descripción, fecha y ubicación. Permite ver la ubicación en Google Maps y eliminar fotos de forma interactiva.
 
 ---
 
@@ -67,7 +67,7 @@
 
 ---
 
-## Esta clase gestiona la pestaña de registro de gastos con fotos. Permite tomar fotos desde la cámara, mostrar una previsualización y completar un formulario con descripción, monto y pagador. Los datos se guardan mediante PhotoService, que también permite importar gastos desde un archivo .txt y eliminar fotos existentes. La clase sincroniza la galería con cambios en tiempo real y limpia los campos del formulario después de cada registro, asegurando una experiencia práctica y organizada.
+## 8. Esta clase gestiona la pestaña de registro de gastos con fotos. Permite tomar fotos desde la cámara, mostrar una previsualización y completar un formulario con descripción, monto y pagador. Los datos se guardan mediante PhotoService, que también permite importar gastos desde un archivo .txt y eliminar fotos existentes. La clase sincroniza la galería con cambios en tiempo real y limpia los campos del formulario después de cada registro, asegurando una experiencia práctica y organizada.
 
 ---
 
