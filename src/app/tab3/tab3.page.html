@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Galeria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content class="ion-padding" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: #fff; font-family: 'Roboto', sans-serif;">
+
+  <div *ngIf="photoService.photos.length === 0" style="text-align:center; margin-top:50px; font-size:18px;">
+    No hay fotos guardadas.
+  </div>
+
+  <div *ngFor="let photo of photoService.photos; let i = index" style="margin-bottom: 30px; background: rgba(255,255,255,0.05); border-radius: 20px; padding: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); transition: all 0.3s; backdrop-filter: blur(10px);">
+    
+    <!-- Imagen -->
+    <img [src]="photo.webviewPath" alt="Foto {{i + 1}}" style="width: 100%; border-radius: 15px; max-height: 300px; object-fit: cover; transition: transform 0.3s;" 
+         onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'"/>
+
+    <!-- Descripción -->
+    <p *ngIf="photo.description" style="margin-top:10px; font-size:14px;">
+      <strong>Descripción:</strong> {{ photo.description }}
+    </p>
+
+    <!-- Fecha -->
+    <p *ngIf="photo.date" style="font-size:14px;">
+      <strong>Fecha:</strong> {{ photo.date | date:'fullDate' }}
+    </p>
+
+    <!-- Coordenadas -->
+    <p *ngIf="photo.lat !== undefined && photo.lng !== undefined" style="font-size:14px;">
+      📍 Lat: {{ photo.lat }}, Lng: {{ photo.lng }}
+    </p>
+
+    <!-- Link de Google Maps -->
+    <p *ngIf="photo.mapsLink" style="font-size:14px;">
+      <a [href]="photo.mapsLink" target="_blank" rel="noopener noreferrer" style="color:#00ffe5; text-decoration:underline; transition: color 0.3s;"
+         onmouseover="this.style.color='#ffdd00'" 
+         onmouseout="this.style.color='#00ffe5'">
+        Ver ubicación en Google Maps
+      </a>
+    </p>
+
+    <!-- Botón -->
+    <ion-button expand="block" style="margin-top:10px; font-weight:bold; --background: linear-gradient(45deg,#5f0002,#ff0000); --box-shadow:0 5px 15px rgba(0,0,0,0.3); transition: all 0.3s;" 
+                onmouseout="this.style.transform='translateY(0)'" 
+                (click)="deletePhoto(photo, i)">
+      Eliminar Foto
+    </ion-button>
+    
+    <!-- Separador -->
+    <hr style="border:0; height:1px; background: linear-gradient(to right, transparent, #ffffff, transparent); margin:20px 0;" />
+  </div>
+
+  <!-- Footer pequeño -->
+  <div style="text-align:center; margin-top:50px; font-size:12px; color:rgba(8, 8, 8, 0.5);">
+    Galería interactiva creada con ❤️ por Gabriel Imbaquingo
+  </div>
+
+</ion-content>

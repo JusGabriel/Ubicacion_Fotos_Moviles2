@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Tomar Foto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Card de acción principal -->
+  <ion-card class="action-card">
+    <ion-card-header>
+      <ion-card-title>📸 Captura tu recibo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Presiona el botón para tomar una foto de tu recibo y registrar la ubicación automáticamente.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Botón principal -->
+  <ion-button expand="block" color="primary" (click)="takePhoto()" class="main-btn">
+    Tomar Foto
+  </ion-button>
+
+  <!-- Previsualización -->
+  <div *ngIf="photoPreview" class="preview-section">
+    <ion-card class="photo-card">
+      <img [src]="photoPreview" alt="Previsualización" class="photo-preview" />
+
+      <!-- Link de ubicación -->
+      <div *ngIf="mapsLink" class="maps-link">
+        <a [href]="mapsLink" target="_blank" rel="noopener noreferrer">
+          🌍 Ver ubicación en Google Maps
+        </a>
+      </div>
+
+      <!-- Checkbox para guardar ubicación -->
+      <ion-item lines="none">
+        <ion-label>Guardar ubicación en archivo TXT</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="saveLocation"></ion-checkbox>
+      </ion-item>
+
+      <!-- Botón guardar -->
+      <ion-button expand="block" color="success" (click)="savePhoto()" class="save-btn">
+        Guardar Imagen
+      </ion-button>
+    </ion-card>
+  </div>
+
+</ion-content>

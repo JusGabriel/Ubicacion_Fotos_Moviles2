@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Mi Galería de Recibos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Bienvenida -->
+  <div class="welcome-section ion-text-center">
+    <h1>📸 Bienvenido</h1>
+    <p class="subtitle">Gestiona tus fotos de recibos y controla tus gastos de manera eficiente.</p>
+  </div>
+
+  <!-- Cards de opciones -->
+  <div class="cards-container">
+    
+    <ion-card button routerLink="/tabs/tab2" class="card-option">
+      <ion-card-header>
+        <ion-card-title>Tomar Fotos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Captura tus recibos al instante y guarda la ubicación donde fueron tomados.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card button routerLink="/tabs/tab3" class="card-option">
+      <ion-card-header>
+        <ion-card-title>Ver Galería</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Revisa todas tus fotos guardadas, visualiza las ubicaciones y gestiona tus gastos.
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+
+  <!-- Información adicional -->
+  <div class="info-section">
+    <ion-card class="info-card">
+      <ion-card-header>
+        <ion-card-title>💡 Consejos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        - Mantén tus recibos organizados por fecha.<br>
+        - Usa la ubicación para saber dónde se realizó la compra.<br>
+        - Controla tus gastos mensuales fácilmente.
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>
+
+<!-- Footer -->
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-title size="small" class="ion-text-center">
+      © 2025 Mi Galería de Recibos | Desarrollado por Gabriel Imbaquingo
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

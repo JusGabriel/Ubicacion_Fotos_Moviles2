@@ -1,0 +1,77 @@
+/* Estilos para la galería */
+ion-content {
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+div[ng-reflect-ng-if="false"] p {
+  color: #ffffff;
+}
+
+div[ng-reflect-ng-for-of] {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+div[ng-reflect-ng-for-of]:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+img {
+  border-radius: 12px;
+  max-height: 300px;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+p a {
+  color: #00ffe5;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+p a:hover {
+  color: #000000;
+}
+
+ion-button {
+  margin-top: 10px;
+  font-weight: bold;
+  --background: linear-gradient(45deg, #420102, #f9d423);
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+ion-button:hover {
+  transform: translateY(-3px);
+  --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ffffff, transparent);
+  margin: 20px 0;
+}
+
+.gamer-header {
+  background: linear-gradient(135deg, #6a0dad, #9b30ff, #8a2be2);
+  --ion-background-color: transparent; /* Asegura que el gradiente se vea */
+  color: #ffffff;
+}
+
+.gamer-subtitle {
+  font-size: 14px;
+  font-weight: normal;
+  color: #e0cfff;
+}
