@@ -8,9 +8,26 @@
 
 ## Usamos la plantilla de la aplicación de fotos y la vamos adaptando poco a poco con ayuda del repositorio proporcionado por el Ingeniero.
 
+---
+
+<img width="1299" height="706" alt="image" src="https://github.com/user-attachments/assets/4540858f-829c-4bca-867a-3af02f2f7c43" />
+<img width="1407" height="722" alt="image" src="https://github.com/user-attachments/assets/609b1fe0-7e54-4fcd-90d4-9a3551fd4030" />
+
+---
+
 ## Primero, modificamos los íconos que mostrarán las diferentes secciones de nuestro proyecto.
 
+---
+
+<img width="479" height="96" alt="image" src="https://github.com/user-attachments/assets/1626ab33-627e-45ae-b541-ead222be7eac" />
+
+---
+
 ## Luego comenzamos con el código. Para esto, debemos tener instalados @capacitor/filesystem y @capacitor/geolocation.
+
+---
+
+<img width="887" height="38" alt="image" src="https://github.com/user-attachments/assets/53d426bf-ea99-4cad-a527-f34c7219cff2" />
 
 ---
 
